@@ -3,8 +3,8 @@ import os
 import shutil
 from datetime import datetime
 
-chromedata_path = 'C:/Users/<Username>/AppData/Local/Google/Chrome/User Data/Default/Local Storage/leveldb' # this is your Chrome data path (make sure to replace <Username> with your user's username)
-local_path = './backups/' # this is your backups folder path (you can change to anywhere but make sure to include the last backslash /)
+chromedata_path = '/Users/<Username>/Library/Application Support/Google/Chrome/Default/Local Storage/leveldb/' # this is your Chrome data path (make sure to replace <Username> with your user's username)
+local_path = '/Users/<Username>/Library/Mobile Documents/com~apple~CloudDocs/BACKUPS/ONETAB CHROME/' # this is your backups folder path (you can change to anywhere but make sure to include the last backslash /)
 exclude_file = 'LOCK' 
 
 def backup():
