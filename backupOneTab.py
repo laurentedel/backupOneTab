@@ -24,6 +24,10 @@ def backup():
   os.mkdir(dest)
   print(dest + ' created')
 
+  # keep only the latest 50 backups
+  for d in sorted(os.listdir(local_path)[50:]):
+    shutil.rmtree(local_path+d)
+    
   # copy ldb and log files from chromedata directory to local directory
   print('copying from ' + src + ' to ' + dest)
   src_files = os.listdir(src)
